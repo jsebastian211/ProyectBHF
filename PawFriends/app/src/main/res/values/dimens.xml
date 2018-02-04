@@ -1,0 +1,63 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">8dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+
+    <dimen name="margin_left_8dp">8dp</dimen>
+    <dimen name="margin_left_20dp">20dp</dimen>
+    <dimen name="margin_left_46dp">46dp</dimen>
+    <dimen name="margin_right_8dp">8dp</dimen>
+    <dimen name="margin_right_20dp">20dp</dimen>
+    <dimen name="margin_right_60dp">60dp</dimen>
+    <dimen name="margin_start_8dp">8dp</dimen>
+    <dimen name="margin_start_46dp">46dp</dimen>
+    <dimen name="margin_end_8dp">8dp</dimen>
+    <dimen name="margin_end_60dp">60dp</dimen>
+    <dimen name="margin_top_8dp">8dp</dimen>
+    <dimen name="margin_top_16dp">16dp</dimen>
+    <dimen name="margin_top_20dp">20dp</dimen>
+    <dimen name="margin_top_32dp">32dp</dimen>
+    <dimen name="margin_top_35dp">35dp</dimen>
+    <dimen name="margin_top_40dp">40dp</dimen>
+    <dimen name="margin_top_50dp">50dp</dimen>
+    <dimen name="margin_top_87dp">87dp</dimen>
+    <dimen name="margin_top_91dp">91dp</dimen>
+    <dimen name="margin_top_98dp">98dp</dimen>
+    <dimen name="margin_top_custom">116dp</dimen>
+    <dimen name="margin_bottom_0dp">0dp</dimen>
+    <dimen name="margin_bottom_8dp">8dp</dimen>
+    <dimen name="margin_bottom_20dp">20dp</dimen>
+    <dimen name="margin_bottom_24dp">24dp</dimen>
+    <dimen name="width_0dp">0dp</dimen>
+    <dimen name="width_48dp">48dp</dimen>
+    <dimen name="width_custom_146dp">146dp</dimen>
+    <dimen name="height_0dp">0dp</dimen>
+    <dimen name="height_48dp">48dp</dimen>
+    <dimen name="height_custom_209dp">209dp</dimen>
+    <dimen name="height_custom_54dp">54dp</dimen>
+    <dimen name="padding_bottom_10dp">10dp</dimen>
+    <dimen name="padding_top_10dp">10dp</dimen>
+
+    <!-- Dimen for start and login activiity -->
+    
+
+
+    <dimen name="login_layout_botton_margin">15dp</dimen>
+    <dimen name="login_layout_right_margin_check_box">16dp</dimen>
+    <dimen name="login_layout_left_margin_check_box">16dp</dimen>
+    <dimen name="login_layout_left_padding_check_box">8dp</dimen>
+
+
+    <!-- Dimens for dialog -->
+    <dimen name="dialog_term_layout_botton_padding">8dp</dimen>
+    <dimen name="dialog_term_element_left_padding">24dp</dimen>
+    <dimen name="dialog_term_element_right_padding">24dp</dimen>
+    <dimen name="dialog_term_element_left_margin_check_box">24dp</dimen>
+    <dimen name="dialog_term_element_right_margin_check_box">24dp</dimen>
+    <dimen name="dialog_term_element_above_padding">24dp</dimen>
+</resources>

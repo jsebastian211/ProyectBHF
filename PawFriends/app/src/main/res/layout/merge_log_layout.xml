@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical"
+        android:background="@drawable/semi_transparent_layout"
+        >
+
+        <RelativeLayout
+            android:id="@+id/layout_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:id="@+id/progressBar1"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true" />
+
+
+        </RelativeLayout>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/btn_sign_in"
+                android:textColor="@color/colorTextDescription"
+                android:layout_width="@dimen/width_custom_146dp"
+                android:layout_height="@dimen/height_custom_54dp"
+                android:text="@string/sign_in"
+                android:theme="@style/ButtonFirstStart"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_marginRight="@dimen/margin_right_8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin_top_32dp"
+                android:layout_marginEnd="@dimen/margin_end_8dp" />
+
+            <Button
+                android:id="@+id/btn_log_in"
+                android:layout_width="@dimen/width_custom_146dp"
+                android:layout_height="@dimen/height_custom_54dp"
+                android:text="@string/log_in"
+                android:textColor="@color/colorTextDescription"
+                android:theme="@style/ButtonFirstStart"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="@dimen/margin_top_32dp"
+                app:layout_constraintRight_toLeftOf="@+id/btn_sign_in"
+                android:layout_marginRight="@dimen/margin_right_8dp"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:layout_marginStart="@dimen/margin_start_8dp"
+                android:layout_marginEnd="@dimen/margin_end_8dp" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="@dimen/width_0dp"
+                android:layout_height="@dimen/height_0dp"
+                android:layout_marginBottom="@dimen/margin_bottom_8dp"
+                android:layout_marginEnd="@dimen/margin_end_8dp"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:layout_marginRight="@dimen/margin_right_8dp"
+                android:layout_marginStart="@dimen/margin_start_8dp"
+                android:layout_marginTop="@dimen/margin_top_16dp"
+                android:animateLayoutChanges="true"
+                android:visibility="gone"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_log_in"
+                app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintBottom_toBottomOf="parent">
+
+                <Button
+                    android:id="@+id/btn_enter"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below= "@+id/txtResult"
+                    android:layout_marginTop="@dimen/margin_top_35dp"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/string_continue"
+                    android:textColor="@color/colorTextDescription"
+                    android:theme="@style/ButtonFirstStart"
+                    android:visibility="gone" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:indeterminate="true" />
+
+                <TextView
+                    android:id="@+id/txtResult"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/firebase_email_send"
+                    android:textColor="@color/colorTextDescription"
+                    android:textSize="17sp"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="@dimen/width_0dp"
+                android:layout_height="@dimen/height_0dp"
+                android:layout_marginEnd="@dimen/margin_end_8dp"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:layout_marginRight="@dimen/margin_right_8dp"
+                android:layout_marginStart="@dimen/margin_start_8dp"
+                android:animateLayoutChanges="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_log_in"
+                app:layout_constraintVertical_bias="1.0">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/emailText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:theme="@style/TextLabel"
+                    app:errorTextAppearance="@style/inputTextLayoutError"
+                    app:hintTextAppearance="@style/FloatingTextLabel">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/email"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/passwordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/emailText"
+                    android:layout_marginTop="@dimen/margin_top_16dp"
+                    android:theme="@style/TextLabel"
+                    app:errorTextAppearance="@style/inputTextLayoutError"
+                    app:passwordToggleTint="@color/colorWhite"
+                    app:hintTextAppearance="@style/FloatingTextLabel"
+                    app:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/confirmPasswordText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/passwordText"
+                    android:layout_marginTop="@dimen/margin_top_16dp"
+                    android:theme="@style/TextLabel"
+                    android:visibility="gone"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorWhite"
+                    app:errorTextAppearance="@style/inputTextLayoutError"
+                    app:hintTextAppearance="@style/FloatingTextLabel">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="@string/password_confirm"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhite" />
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/link_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/terms_policies_link"
+                    android:textColorLink="@color/colorLinkAndError"
+                    android:layout_below="@+id/passwordText"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/margin_top_91dp" />
+
+                <CheckBox
+                    android:id="@+id/ch_accept_term"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorWhite"
+                    android:theme="@style/CheckBoxCustom"
+                    android:paddingBottom="@dimen/dialog_term_layout_botton_padding"
+                    android:paddingLeft="@dimen/dialog_term_layout_botton_padding"
+                    android:text="@string/terms_policies_description"
+                    android:layout_below="@+id/link_terms"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/password_register"
+                    android:textColor="@color/colorButtonRegister"
+                    android:theme="@style/ButtonRegister"
+                    android:layout_below="@+id/ch_accept_term"
+                    android:layout_centerHorizontal="true" />
+
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/back"
+                    android:textColor="@color/colorTextDescription"
+                    android:theme="@style/ButtonFirstStart"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_below="@+id/btnRegister"
+                    android:layout_alignLeft="@+id/btnRegister"
+                    android:layout_alignStart="@+id/btnRegister"
+                    android:layout_alignRight="@+id/btnRegister"
+                    android:layout_alignEnd="@+id/btnRegister" />
+
+                <TextView
+                    android:id="@+id/btn_res_password_email_step"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_bottom_24dp"
+                    android:clickable="true"
+                    android:text="@string/res_password_option"
+                    android:textColor="@color/colorTextDescription"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/restore_pass_resend_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:animateLayoutChanges="true"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/txt_restore_resend_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_87dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/res_password_option"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/txt_restore_resend_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_restore_resend_title"
+                android:layout_marginEnd="@dimen/margin_end_8dp"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:layout_marginRight="@dimen/margin_right_8dp"
+                android:layout_marginStart="@dimen/margin_start_8dp"
+                android:layout_marginTop="@dimen/margin_top_16dp"
+                android:text="@string/res_password_description"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextDescription"
+                android:textSize="17sp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtEmailResPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/TextLabel"
+                app:errorTextAppearance="@style/inputTextLayoutError"
+                app:hintTextAppearance="@style/FloatingTextLabel"
+                android:layout_below="@+id/txt_restore_resend_description"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_16dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/email"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorWhite" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnConfirmResetResend"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/res_password_confirm"
+                android:textColor="@color/colorButtonRegister"
+                android:theme="@style/ButtonRegister"
+                android:layout_marginTop="@dimen/margin_top_16dp"
+                android:layout_below="@+id/txtEmailResPass"
+                android:layout_centerHorizontal="true" />
+
+            <Button
+                android:id="@+id/btnBackEmailLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/back"
+                android:textColor="@color/colorTextDescription"
+                android:theme="@style/ButtonFirstStart"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_below="@+id/btnConfirmResetResend"
+                android:layout_marginTop="@dimen/margin_top_16dp"
+                android:layout_alignLeft="@+id/btnConfirmResetResend"
+                android:layout_alignStart="@+id/btnConfirmResetResend"
+                android:layout_alignRight="@+id/btnConfirmResetResend"
+                android:layout_alignEnd="@+id/btnConfirmResetResend" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/first_login_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/margin_bottom_20dp"
+            android:animateLayoutChanges="true"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/txt_login_step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_98dp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/txt_login_step_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_login_step"
+                android:layout_marginEnd="@dimen/margin_end_8dp"
+                android:layout_marginLeft="@dimen/margin_left_8dp"
+                android:layout_marginRight="@dimen/margin_right_8dp"
+                android:layout_marginStart="@dimen/margin_start_8dp"
+                android:layout_marginTop="@dimen/margin_top_16dp"
+                android:text="@string/log_in_step_description"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextDescription"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/link_terms1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/btnEmail"
+                android:layout_alignLeft="@+id/btnEmail"
+                android:layout_alignRight="@+id/btnEmail"
+                android:layout_alignStart="@+id/btnEmail"
+                android:layout_below="@+id/txt_login_step_description"
+                android:layout_marginTop="@dimen/margin_top_87dp"
+                android:text="@string/terms_policies_link"
+                android:textAlignment="center"
+                android:textColorLink="@color/colorLinkAndError" />
+
+            <CheckBox
+                android:id="@+id/ch_accept_term1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/link_terms1"
+                android:layout_marginLeft="@dimen/margin_left_20dp"
+                android:layout_marginRight="@dimen/margin_right_20dp"
+                android:layout_marginTop="@dimen/margin_top_8dp"
+                android:text="@string/terms_policies_description"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:theme="@style/CheckBoxCustom" />
+
+            <Button
+                android:id="@+id/btnEmail"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fb_login_button"
+                android:layout_alignLeft="@+id/fb_login_button"
+                android:layout_alignRight="@+id/fb_login_button"
+                android:layout_alignStart="@+id/fb_login_button"
+                android:layout_below="@+id/ch_accept_term1"
+                android:layout_marginTop="@dimen/margin_top_8dp"
+                android:text="@string/email"
+                android:textColor="@color/colorButtonRegister"
+                android:theme="@style/ButtonRegister" />
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/fb_login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnEmail"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_8dp"
+                android:paddingBottom="@dimen/padding_bottom_10dp"
+                android:paddingTop="@dimen/padding_top_10dp" />
+
+            <TextView
+                android:id="@+id/btn_enter_no_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:text="@string/enter_without_login"
+                android:textColor="@color/colorTextDescription"
+                android:layout_below="@+id/fb_login_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_top_20dp"
+                />
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
+</merge>

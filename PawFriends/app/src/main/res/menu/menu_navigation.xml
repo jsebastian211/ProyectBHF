@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bnv_op_main"
+        android:title="@string/nav_home_option"
+        android:icon="@drawable/ic_home_24dp">
+    </item>
+
+    <item
+        android:id="@+id/bnv_op_favorite"
+        android:title="@string/nav_fav_option"
+        android:icon="@drawable/ic_favorite_24dp">
+    </item>
+
+    <item
+        android:id="@+id/bnv_op_settings"
+        android:title="@string/nav_conf_option"
+        android:icon="@drawable/ic_settings_24dp"
+        >
+    </item>
+</menu>

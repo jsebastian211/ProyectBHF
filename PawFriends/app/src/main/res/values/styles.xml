@@ -1,0 +1,99 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- General style. -->
+    <style name="DialogAnimationCustom">
+        <item name="android:windowEnterAnimation">@anim/bounce_animator_enter</item>
+        <item name="android:windowExitAnimation">@anim/bounce_animator_exit</item>
+    </style>
+
+    <!-- General screen's style. -->
+    <style name="AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <!-- ******************************************* -->
+    <!-- ******************************************* -->
+
+    <!-- Splash screen's style. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+    <!-- ******************************************* -->
+
+    <!-- First launch screen's and login style. -->
+    <style name="StartTheme" parent="@style/AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ButtonFirstStart" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="TextLabel" parent="ThemeOverlay.AppCompat.Light">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorWhite</item>
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:textSize">16sp</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorWhite</item>
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <item name="colorControlActivated">@color/colorWhite</item>
+    </style>
+
+    <style name="FloatingTextLabel" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ButtonRegister" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorWhite</item>
+    </style>
+
+    <style name="inputTextLayoutError" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textColor">#FF9800</item>
+    </style>
+
+    <style name="CheckBoxCustom">
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="colorControlActivated">@color/colorWhite
+        </item> <!-- activated color change as you wish -->
+        <item name="android:textColorSecondary">@color/colorWhite</item>
+
+    </style>
+    <!-- ******************************************* -->
+
+    <!-- Main screen's style. -->
+    <style name="MainTheme" parent="@style/AppTheme.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="TransparentText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">#00000000</item>
+    </style>
+    <!-- ******************************************* -->
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@null"
+    android:id="@+id/layout_principal_fragment"
+    >
+
+    <ScrollView
+        android:id="@+id/layout_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_marginTop="8dp"
+                android:id="@+id/rvRecentNews"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_option_register"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/button_option_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="24sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Mis mascotas"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ffffff"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"/>
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:textColor="@color/colorTextDescription"
+                    android:layout_marginRight="8dp"
+                    android:layout_gravity="right"
+                    android:text="Ten a la mano \nla informacion de tu mascota"
+                    android:textSize="17sp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    />
+
+                <!--
+
+                <Button
+                    android:id="@+id/btnRegister"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Registra tu mascota"
+                    android:background="@drawable/button_option_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                    -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_option_vets"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/button_option_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="24sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Veterinarias"
+                    android:fontFamily="sans-serif-light"
+                    />
+                <!--
+                <Button
+                    android:id="@+id/btnVets"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_option_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                 -->
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/layout_option_places"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:background="@drawable/button_option_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="24sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Lugares"
+                android:fontFamily="sans-serif-light"
+                />
+
+
+
+            <!--
+            <Button
+                android:id="@+id/btnPlaces"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_option_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            -->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_option_lawtips"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:elevation="4dp"
+            android:orientation="vertical"
+
+            android:clickable="true"
+            android:background="@drawable/button_option_layout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextTitle"
+                android:textSize="24sp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:text="Reglamentos y tips"
+                android:fontFamily="sans-serif-light"
+                />
+
+            <!--
+            <Button
+                android:id="@+id/btnLawsTips"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/button_option_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+              -->
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_option_adopt"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/button_option_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="24sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Adopta"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <!--
+                <Button
+                    android:id="@+id/btnAdopt"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_option_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                 -->
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/layout_option_find"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:elevation="4dp"
+                android:orientation="vertical"
+                android:clickable="true"
+                android:background="@drawable/button_option_layout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorTextTitle"
+                    android:textSize="24sp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Encuentralos"
+                    android:fontFamily="sans-serif-light"
+                    />
+
+                <!--
+                Ejemplo: valor de background anterior en el linerlayout
+                android:background="@drawable/rounded_option_layout">
+
+                <Button
+                    android:id="@+id/btnFind"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_option_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                 -->
+
+            </LinearLayout>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="salir"
+                android:onClick="logout"
+                />
+
+
+            <TextView
+                android:id="@+id/info2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="@+id/info1"
+                android:layout_marginRight="8dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintHorizontal_bias="0.011"
+                android:layout_marginTop="41dp"
+                app:layout_constraintTop_toBottomOf="@+id/info3"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toTopOf="@+id/info1" />
+
+            <TextView
+                android:id="@+id/info3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                tools:layout_editor_absoluteY="193dp"
+                android:layout_marginRight="0dp"
+                app:layout_constraintRight_toRightOf="@+id/info2"
+                android:layout_marginLeft="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintHorizontal_bias="0.402" />
+
+            <TextView
+                android:id="@+id/info1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Hello World!"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_editor_absoluteY="361dp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
